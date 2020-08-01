@@ -1,0 +1,5 @@
+package com.nantian.dao;
+
+public class UserDao {
+
+}

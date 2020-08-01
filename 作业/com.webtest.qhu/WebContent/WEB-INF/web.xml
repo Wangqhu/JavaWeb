@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>com.webtest.qhu</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.wentest.loginservlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login1</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>SelectInfo</servlet-name>
+  <servlet-class>com.wentest.loginservlet.SelectInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SelectInfo</servlet-name>
+  <url-pattern>/select</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>UploadFile</servlet-name>
+  <servlet-class>com.wentest.loginservlet.UploadFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UploadFile</servlet-name>
+  <url-pattern>/UploadFile</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>Tea_download</servlet-name>
+  <servlet-class>com.wentest.loginservlet.Tea_download</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Tea_download</servlet-name>
+  <url-pattern>/Tea_download</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>SubmitHomework</servlet-name>
+  <servlet-class>com.wentest.loginservlet.SubmitHomework</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SubmitHomework</servlet-name>
+  <url-pattern>/SubmitHomework</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>Stu_download</servlet-name>
+  <servlet-class>com.wentest.loginservlet.Stu_download</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Stu_download</servlet-name>
+  <url-pattern>/Stu_download</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>Inform</servlet-name>
+  <servlet-class>com.wentest.loginservlet.Inform</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Inform</servlet-name>
+  <url-pattern>/Inform</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>Info</servlet-name>
+  <servlet-class>com.wentest.loginservlet.Info</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Info</servlet-name>
+  <url-pattern>/Info</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>UpdatePersonInfo</servlet-name>
+  <servlet-class>com.wentest.loginservlet.UpdatePersonInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdatePersonInfo</servlet-name>
+  <url-pattern>/UpdatePersonInfo</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>liuyan</servlet-name>
+  <servlet-class>com.wentest.loginservlet.liuyan</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>liuyan</servlet-name>
+  <url-pattern>/liuyan</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>huifu</servlet-name>
+  <servlet-class>com.wentest.loginservlet.huifu</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>huifu</servlet-name>
+  <url-pattern>/huifu</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>score</servlet-name>
+  <servlet-class>com.wentest.loginservlet.score</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>score</servlet-name>
+  <url-pattern>/score</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>UpdateStuInfo</servlet-name>
+  <servlet-class>com.wentest.loginservlet.UpdateStuInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateStuInfo</servlet-name>
+  <url-pattern>/UpdateStuInfo</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>SelectScore</servlet-name>
+  <servlet-class>com.wentest.loginservlet.SelectScore</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SelectScore</servlet-name>
+  <url-pattern>/SelectScore</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>addstudent</servlet-name>
+  <servlet-class>com.wentest.loginservlet.addstudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addstudent</servlet-name>
+  <url-pattern>/addstudent</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>register</servlet-name>
+  <servlet-class>com.wentest.loginservlet.register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/register</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>Excelservlets</servlet-name>
+  <servlet-class>com.wentest.loginservlet.Excelservlets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Excelservlets</servlet-name>
+  <url-pattern>/Excelservlets</url-pattern>
+ </servlet-mapping>
+</web-app>

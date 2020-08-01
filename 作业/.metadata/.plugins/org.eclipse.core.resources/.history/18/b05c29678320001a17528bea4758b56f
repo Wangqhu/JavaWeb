@@ -1,0 +1,46 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/css.css"/>
+        <title>跳转页面</title>
+    </head>
+    <script type="text/javascript">
+	function login_out(){	
+		session.removeAttribute("username"); //注销session中的username对象
+		session.removeAttribute("id"); //注销session中的id对象
+		session.invalidate(); //关闭session
+		window.location.href = "login.jsp";
+	}
+</script>
+    <body >
+        <h1>主页实现</h1>
+        <hr>
+        <br>
+        <%
+          if (session.getAttribute("uname") != null) {                     
+        %>
+        <button type="button" name="button1" value="注销" onClick="login_out()">注销</button>
+        <h2>登陆成功</h2>
+        <h2>欢迎<font color="red" size="12">
+            <%=session.getAttribute("uname")%>
+            <%="["%>
+            <%=session.getAttribute("uleixing")%>
+            <%="]"%>
+            </font>光临MLDN留言程序</h2>
+        <%-- <h2>两秒后跳转到留言管理界面</h2>
+        <%		response.setHeader("refresh", "2;URL=list_notes.jsp");
+        %>
+        <h3><a href="list_notes.jsp">进入留言管理页面</a></h3> --%>
+        <%
+        } else {
+            response.setHeader("refresh", "2;URL=login.jsp");
+        %>
+        您还未登陆，请先登陆！！！<br>
+        两秒后自动跳转到登陆窗口！！！<br>
+        如果没有跳转，请按<a href="login.jsp">这里</a>！！！<br>
+        <%
+         }
+        %>
+</body>
+</html>

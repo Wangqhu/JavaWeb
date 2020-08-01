@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>欢迎登陆</h1>
+	<form action="login" method="post">
+		用户名<input type="text" placeholder="请输入用户名" name="user"><br />
+		密码<input type="password" placeholder="请输入密码" name="pwd"> <input
+			type="submit" value="登陆">
+	</form>
+</body>
+————————————————
+版权声明：本文为CSDN博主「csdn_一介码夫」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/csdn_wangchong/article/details/96021498
+</html>

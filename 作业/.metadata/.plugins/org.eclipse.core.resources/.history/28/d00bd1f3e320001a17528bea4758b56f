@@ -1,0 +1,21 @@
+package com.webtest.utils;
+
+import java.sql.SQLException;
+import com.nantian.dao.UserDao;
+import com.webtest.user.User;
+
+public class UserService {
+
+    private UserDao userDao = new UserDao();
+
+    /**
+     * 添加用户
+     * @param user 要添加的用户对象
+     * @throws SQLException
+     */
+  
+    public User login(User user) throws SQLException {
+        return userDao.login(user);
+    }
+
+}

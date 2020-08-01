@@ -1,0 +1,29 @@
+package LoginServlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sun.star.io.IOException;
+
+public class doLogoutServlet {
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
+            if(request.getSession().getAttribute("user")==null)
+                throw new Exception("µÇÂ¼ÒÑ³¬Ê±£¡");
+            Boolean isAdmin = ((Auctionuser)request.getSession().getAttribute("user")).getUserisadmin();
+            request.getSession().invalidate();
+            if(isAdmin){
+                response.sendRedirect("login-admin.jsp");
+            }else{
+                response.sendRedirect("login.jsp");
+            }            
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            request.setAttribute("message", e.getMessage());
+            request.getRequestDispatcher("error.jsp").forward(request,response);
+        }
+    }
+}

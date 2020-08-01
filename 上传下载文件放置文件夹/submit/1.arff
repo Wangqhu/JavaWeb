@@ -1,0 +1,29 @@
+@relation 3²½CSV_predicted
+
+@attribute animal {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catfish,cavy,cheetah,chicken,chub,clam,crab,crayfish,crow,deer,dogfish,dolphin,dove,duck,elephant,flamingo,flea,frog,fruitbat,giraffe,girl,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladybird,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starfish,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+@attribute hair {TRUE,FALSE}
+@attribute feathers {FALSE,TRUE}
+@attribute eggs {FALSE,TRUE}
+@attribute milk {TRUE,FALSE}
+@attribute airborne {FALSE,TRUE}
+@attribute aquatic {FALSE,TRUE}
+@attribute predator {TRUE,FALSE}
+@attribute toothed {TRUE,FALSE}
+@attribute backbone {TRUE,FALSE}
+@attribute breathes {TRUE,FALSE}
+@attribute venomous {FALSE,TRUE}
+@attribute fins {FALSE,TRUE}
+@attribute legs numeric
+@attribute tail {FALSE,TRUE}
+@attribute domestic {FALSE,TRUE}
+@attribute catsize {TRUE,FALSE}
+@attribute 'prediction margin' numeric
+@attribute 'predicted type' {mammal,fish,bird,invertebrate,insect,amphibian,reptile}
+@attribute type {mammal,fish,bird,invertebrate,insect,amphibian,reptile}
+
+@data
+chub,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,TRUE,FALSE,FALSE,0,mammal,?
+duck,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE,FALSE,FALSE,0,mammal,?
+dogfish,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,TRUE,FALSE,TRUE,0,mammal,fish
+catfish,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,TRUE,FALSE,FALSE,-0.125,fish,?
+carp,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,0,TRUE,TRUE,FALSE,-0.125,fish,?

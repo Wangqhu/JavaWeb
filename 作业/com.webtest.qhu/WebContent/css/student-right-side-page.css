@@ -1,0 +1,164 @@
+@charset "utf-8";
+body,html{height: calc(100% - 10px); background-color: #B2B8BE;}
+table{width: calc(100% - 10px); height: auto; margin-top: 2px; margin-left: 2px;}
+tr{border: 1px solid black;height: 100px;}
+td{border: 1px solid black;}
+p{width: 100%;height: 55px;text-align: center; font-size: 1.5em; display: block; font-weight: bold;position: fixed;top: 0px;left: 0;}
+div{overflow: auto;position: fixed;right: 55px;left: 55px;top: 45px;bottom: 10px;}textarea{resize: vertical;overflow: auto;}
+input{width: 70px;}
+form{text-align: center;}
+
+.home-parent-div-p{
+	padding: 150px 150px 150px 150px;
+}
+
+
+/*个人信息*/
+.student-message-table{
+	border: none;
+	margin: 60px auto;
+	position: absolute;
+}
+.student-message-table tr,td{
+	border: none;
+	height: 50px;
+}
+.student-a2{
+	font-size: 1.5em;
+	font-family: 仿宋;
+	text-align: center;
+}
+.student-a2 input{
+	width: 170px;
+}
+.student-a2 span{
+	display: block;
+	margin-left: 650px;
+	width: 100px;
+}
+.student-a2 span input{
+	display: block;
+	width: 100px;
+}
+/*.student-a2: .student-a3{
+	display: block;
+	width: 100px;
+}*/
+
+/*通知公告*/
+.tongzhi-message{
+	height: 40%;
+}
+.tongzhi-work{
+	height: 40%;
+	overflow: auto;
+	position: fixed;
+	top: 50%;
+}
+.tongzhi-table{
+	height: 20px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+}
+.tongzhi-table tr{
+	height: 20px;
+}
+.tongzhi-table td{
+	height: 20px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.tongzhi-work-child{
+	height: 40%;
+	position: fixed;
+	top: 55%;
+}
+
+
+/*作业管理*/
+.work-div{
+	width: auto;
+    height: calc(100%);
+    position: fixed;
+}
+.work-table{
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: auto;
+}
+.work-table tr{
+	height: 50px;
+}
+.work-table td{
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	font-size: 1.5em;
+	font-family: 仿宋;
+	text-align: center;
+}
+
+
+/*查看分数*/
+.select-a2{
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: auto;
+}
+.select-a2 tr{
+	height: 50px;
+}
+.select-a2 td{
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	font-family:幼圆;
+	font-size: 1.5em; 
+	font-weight: bold;
+	text-align: center;
+}
+/*在线留言*/
+.message-Frist-child-div{
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+.message-Frist-child-div-textarea{
+	height: 159px;
+	display: block;
+	width: 50%;
+	padding: 7px 8px;
+	background: #fff;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	resize: none;
+	font-size: 14px;
+	line-height: 22px;
+	margin: auto;
+}
+.message-Second-child-div{
+	width: auto;
+    padding-top: 177px;
+    margin-left:50%;
+    left:	1px;
+	top: 22px;
+}
+.message-Third-child-div{
+	width: auto;
+	height: auto;
+	border: 1px solid;
+	margin: 215px 200px 11px 200px;
+}
+.liuyan-title{
+	text-align: left;
+	font-size: 25px;
+	right: 65px;
+	height:50px;
+	left: 250px;
+	top: 250px;
+}
+.liuyan-div{
+	right: 65px;
+	height:50%;
+	left: 300px;
+	top: 300px;
+}

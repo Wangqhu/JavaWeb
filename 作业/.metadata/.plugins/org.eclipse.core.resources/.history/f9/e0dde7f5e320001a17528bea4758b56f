@@ -1,0 +1,53 @@
+package com.wentest.loginservlet;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.webtest.user.User;
+import com.webtest.utils.UserService;
+
+@WebServlet("/login")
+public class ServletLogin extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	@Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+       req.setCharacterEncoding("UTF-8");
+       resp.setCharacterEncoding("UTF-8");
+       resp.setContentType("text/html");
+       String name = req.getParameter("username");
+       String pwd = req.getParameter("password");
+       String leixing = req.getParameter("leixing");
+        User user = new User();
+        user.setUsername(name);
+        user.setPassword(pwd);
+        UserService us = new UserService();
+        User u= null;
+        try {
+           u = us.login(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        if(u==null){
+            req.setAttribute("mess","’À∫≈ªÚ√‹¬Î¥ÌŒÛ");
+            req.getRequestDispatcher("login.jsp").forward(req,resp);
+        }else {
+            HttpSession session =  req.getSession();
+            session.setAttribute("user",u);
+            resp.sendRedirect("main.jsp");
+        }
+
+    }
+}
+

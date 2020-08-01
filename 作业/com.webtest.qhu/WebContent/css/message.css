@@ -1,0 +1,62 @@
+@charset "utf-8";
+body,html{height: calc(100% - 10px); background-color: #B2B8BE}
+table{width: calc(100%);height: calc(100% - 240px);padding-top: 75px;text-align: center;}
+p{font-family: 幼圆;font-size: 200%;font-weight: bold;}
+a{color: blueviolet;}
+a:hover{text-decoration: none}
+a:link{text-decoration: none;}
+
+
+/*作业发布*/
+.work-table{
+	padding-top: 0px;
+}
+.work-table tr td span{
+	font-family: 幼圆;
+	font-size: 10px;
+	font-weight: bold;
+	text-algin: left;
+	width: 50%;
+}
+.work-table tr{
+	display: block;
+	height: 35px;
+	border: none;
+}
+.work-table td{
+	display: block;
+	height: 35px;
+	border: none;
+}
+
+
+/*信息发布表格设置*/
+.table{
+	padding-top: 165px;
+}
+
+
+/*分级查询设置*/
+.table-parent{
+	height: calc(100% - 333px);
+	padding-top: 0;
+}
+.table-child{
+	padding-top: 0px;
+}
+.a1{
+	width: 90px;
+	height: 60px;
+}
+.select{
+	margin-right: 500px;
+}
+.nav-table-tr-td-tr{
+	width: 100px;
+	height: 35px;
+}
+.nav-table-tr-td-tr-td{
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 35px;
+}

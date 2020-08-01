@@ -1,0 +1,135 @@
+@charset "utf-8";
+body,html{height: calc(100% - 10px); background-color: #B2B8BE}
+table{width: calc(100% - 10px); height: auto; margin-top: 2px; margin-left: 2px;}
+tr{border: 1px solid black;height: 100px;}
+td{border: 1px solid black;}
+p{width: 100%;height: 55px;text-align: center; font-size: 1.5em; display: block; font-weight: bold;position: fixed;top: 0px;left: 0;}
+
+
+/*首页设置*/
+.FristPage-div{
+	width: calc(100%);
+	height: calc(100% - 10px);
+	display:flex;
+	align-items:center;
+}
+.huanying{
+	width: calc(100% - 10px);
+    margin: auto;
+    position: absolute;
+    text-align: center;
+}
+.huanying h2{
+	font-size: 35px;
+	color: red;
+}
+.huanying h3{
+	font-size: 45px;
+	color: #000000;
+}
+
+
+/*个人信息*/
+.personal-div{
+	width: auto;
+	height: calc(100%);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.personal-div .personal-table{
+	width: auto;
+	height: auto;
+}
+.personal-div .personal-table tr{
+	border: none;
+	height: 65px;
+}
+.personal-div .personal-table td{
+	width: 135px;
+	height: 35px;
+	font-family: 幼圆;
+	font-size: 1.5em;
+	color: black;
+	border: none;
+}
+.personal-div .personal-table td span{
+	margin-left: -97px;
+}
+.personal-div .personal-table td .input{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:100px; 
+    padding: 0px 3px 1px 0px;
+}
+.personal-div .personal-table .size{
+	width:200px;
+	height:30px
+}
+
+
+/*学生管理*/
+.a2{
+	margin: auto; 
+}
+.a2 tr{
+	border: none;
+	width: 100%;
+	height: 50px;
+}
+.student-admin-table td{
+	border: none;
+}
+
+
+/*作业管理*/
+.work-admin-table td{
+	border: none;
+}
+.work-admin-a2{
+	margin: auto;
+}
+.work-admin-form{
+	text-align: center;
+}
+.work-admin-a2 tr{
+	border: none;
+	width: 100%;
+	height: 50px;
+}
+.work-admin-a2 td{
+	border: none;
+}
+
+/*留言管理*/
+.div-parent{
+	width: calc(100%);
+	height: calc(100%);
+	overflow: auto;
+}
+.div-parent-frist-child{
+    width: auto;
+	height: auto;
+}
+.div-parent-second-child-name{
+    width: auto;
+    height: 35px;
+    margin: 31px 50px 0px 125px;
+}
+.div-parent-second-child-name span{
+	font-size: 1.5em;
+	font-family: 微软雅黑;
+}
+.div-reply{
+	width: auto; 
+	height: calc(100% - 180px);
+	height: 100px; 
+	margin: 5px 155px 0px 155px;
+}
+.div-reply .div-button-reply{
+	width: auto;
+	padding-top: 5px;
+	padding-left: calc(100% - 55px);
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+body,html{height: calc(100%); background-color: #B2B8BE;}
+body,ul{margin:0;padding:0}
+body{font:14px "微软雅黑","宋体","Arial Narrow",HELVETICA;}
+li{list-style:none}
+a{text-decoration:none;}
+h1{display: block;
+	font-size: 1.5em;
+	padding-top: 15px;
+	font-weight: bold; 
+	text-align: center;
+}
+
+
+/* 菜单栏背景颜色 */
+.left-side-menu,.lsm-popup.lsm-sidebar   ul li, .lsm-bg.lsm-mini .lsm-sidebar>ul>li.lsm-sidebar-item>ul>li.lsm-sidebar-item>ul{
+    background: #3b3e47;
+}
+
+/*菜单栏背景位置设置*/
+.left-side-menu {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+	}
+.left-side-menu{
+    height: 100%;
+    width: 220px;
+	position: absolute;
+    overflow: auto;
+}
+	
+/*菜单栏背景大小设置*/
+.lsm-bg{
+	transition: all .3s;
+	z-index: 100
+	}
+/*菜单栏字体设置*/
+.lsm-sidebar a{
+	font-size:1.5em;
+	display: block;
+	overflow: hidden;
+	padding-left: 20px;
+	line-height: 40px;
+	max-height: 40px;
+	color: #b2b8be;
+	transition: all .3s;
+	}
+
+/*单个菜单大小*/
+.lsm-bg ul:first-child > li> a, .lsm-bg ul:first-child > li> a span{ 
+	line-height: calc(100% - -90px);
+	max-height: 100%; 
+	}
+.lsm-sidebar a span{margin-left: 30px;}
+.lsm-sidebar-item{position: relative;}
+.lsm-sidebar-item.lsm-sidebar-show{border-bottom: none;}
+.lsm-sidebar-item ul{
+	display: none;
+	background: rgba(0,0,0,.1);
+	}
+.lsm-sidebar-item.lsm-sidebar-show ul{display: block;}
+.lsm-sidebar-item>a:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 2px;
+	height: 40px;
+	background: #34A0CE;
+	opacity:0;
+	transition: all .3s;
+	}
+	
+/*鼠标悬停时动作*/
+.lsm-bg ul:first-child>li.lsm-sidebar-item>a:before{height: 90px;}
+.lsm-sidebar .lsm-sidebar-icon{
+	font-size: 20px;
+	position: absolute;
+	margin-left:-1px;
+	}
+.lsm-sidebar-show > a > i.my-icon.lsm-sidebar-more{transform:rotate(90deg);}
+.lsm-sidebar-show,.lsm-sidebar-item>a:hover{
+	color: #FFF;
+	background: rgba(0, 0, 0, 0.2);
+	}
+.lsm-sidebar-show>a:before,.lsm-sidebar-item>a:hover:before{opacity:1;}
+.lsm-sidebar-item li>a:hover,.lsm-popup>div>ul>li>a:hover{
+	color: #FFF; 
+	background: #6e809c;
+	}

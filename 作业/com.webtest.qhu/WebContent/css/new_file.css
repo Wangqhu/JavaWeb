@@ -1,0 +1,32 @@
+ /*在线留言*/
+ .message-Frist-child-div{
+ 	top: 180px;
+ }
+ .message-Frist-child-div-textarea{
+     resize: vertical;
+ 	overflow: auto;
+ 	height: 159px;
+ 	display: block;
+ 	width: calc(100% - 500px);
+ 	padding: 7px 8px;
+ 	background: #fff;
+ 	border: 1px solid #c1c1c1;
+ 	border-radius: 4px;
+ 	font-size: 14px;
+ 	line-height: 22px;
+ 	margin: auto;
+ }
+ .message-Second-child-div{
+ 	width: auto;
+ 	position: fixed;
+ 	top: 185px;
+ 	padding-left: calc(100% - 375px);
+ }
+ .message-Third-child-div{
+ 	width: auto;
+ 	height: auto;
+ 	border: 1px solid;
+ 	position: fixed;
+ 	top: 210px;
+ 	margin: 0px 200px 11px 200px;
+ }
